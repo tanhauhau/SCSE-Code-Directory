@@ -1,0 +1,11 @@
+{
+  "name": "SCD",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "github": "^0.2.4",
+    "meteor-node-stubs": "^0.2.1"
+  }
+}

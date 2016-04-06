@@ -1,0 +1,32 @@
+<template name="Repo">
+    <div class="ui container">
+        <div class="ui four cards">
+            {{#each repos}}
+            <div class="card">
+                <div class="content">
+                    <a class="header" href="{{repo_link}}">{{repo_name}}</a>
+                    <div class="meta">
+                        <a href="{{owner_url}}"><img class="ui avatar image" src="{{owner_pic}}"> {{owner_name}}</a>
+                    </div>
+                    <div class="description">
+                        {{repo_desc}}
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui buttons">
+                        <div class="ui basic green button js-go-repo">Go</div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        {{#unless repos.count}}
+        <div class="ui message">
+            <div class="header">
+                No repos found.
+            </div>
+            <p>We didnt find any code for this module.</p>
+        </div>
+        {{/unless}}
+    </div>
+</template>

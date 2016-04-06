@@ -1,0 +1,63 @@
+<template name="Search">
+    <div class="ui container {{#if small}}tiny{{/if}}" id="searchContainer">
+        <div class="introduction">
+            <h1 class="ui inverted header">
+                <span class="name" id="title">SCSE Code Directory</span>
+                {{#unless small}}
+                    <span class="tagline">Sharing is Caring</span>
+                {{/unless}}
+            </h1>
+            <div class="ui right action fluid input">
+                <div id="search" class="ui search selection dropdown fluid">
+                    <input type="hidden" name="module" value="{{mod}}">
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Modules</div>
+                    <div class="menu">
+                        {{#each modules}}
+                        <div class="item" data-value="{{id}}">
+                            {{code}} {{name}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <button class="ui inverted button" id="addRepo"><i class="plus icon"></i>Add</button>
+            </div>
+        </div>
+    </div>
+    <div class="ui modal" id="addModal">
+        <div class="header">
+            Add Github Repo
+        </div>
+        <div class="content">
+            <div class="ui form">
+                <div class="field">
+                    <label>Module name</label>
+                    <div id="modalSearch" class="ui search selection dropdown fluid">
+                        <input type="hidden" name="module">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Modules</div>
+                        <div class="menu">
+                            {{#each modules}}
+                            <div class="item" data-value="{{id}}">
+                                {{code}} {{name}}
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                <div class="field" id="github-field">
+                    <label>Github repo</label>
+                    <div class="ui right labeled input">
+                        <input id="github" name="github" type="text" placeholder="https://github.com/cly753/cz4062_project">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="actions">
+            {{> SearchAdd}}
+        </div>
+    </div>
+</template>
+<template name="SearchAdd">
+    <button class="ui button black" id="submitAddRepo">Add Github Repo</button>
+</template>

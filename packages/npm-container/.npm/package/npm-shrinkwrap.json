@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "github": {
+      "version": "0.2.4",
+      "resolved": "https://registry.npmjs.org/github/-/github-0.2.4.tgz",
+      "from": "github@0.2.4",
+      "dependencies": {
+        "mime": {
+          "version": "1.3.4",
+          "resolved": "https://registry.npmjs.org/mime/-/mime-1.3.4.tgz",
+          "from": "mime@>=1.2.11 <2.0.0"
+        }
+      }
+    }
+  }
+}
