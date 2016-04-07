@@ -5,10 +5,17 @@
     <meta http-equiv="content-language" content="en-GB" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body class="testing">
+<body>
 </body>
 
 <template name="ApplicationLayout">
     <div>{{> yield "search"}}</div>
     <div>{{> yield "results"}}</div>
+
+    <div class="ui divider"></div>
+    <div class="ui container grid two">
+        <div class="column">
+            <a class="github-link" href="https://github.com/tanhauhau/SCSE-Code-Directory"><span><i class="github icon"></i></span> View on Github</a>
+        </div>
+    </div>
 </template>

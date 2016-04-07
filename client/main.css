@@ -1,7 +1,6 @@
 /* CSS declarations go here */
 body{
-    background-color: #C12127;
-    background-image: linear-gradient(#C12127, #D8341A);
+    background: #C12127;
     color: #FFF;
 }
 #searchContainer.ui.container{
@@ -58,4 +57,12 @@ body{
 }
 #searchContainer .introduction span.tagline{
     font-size: 0.75em;
+}
+.card{
+    overflow: hidden;
+}
+a.github-link{
+    color:white;
+    text-align: center;
+    display:block;
 }
