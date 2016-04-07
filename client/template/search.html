@@ -8,18 +8,12 @@
                 {{/unless}}
             </h1>
             <div class="ui right action fluid input">
-                <div id="search" class="ui search selection dropdown fluid">
-                    <input type="hidden" name="module" value="{{mod}}">
-                    <i class="dropdown icon"></i>
-                    <div class="default text">Modules</div>
-                    <div class="menu">
-                        {{#each modules}}
-                        <div class="item" data-value="{{id}}">
-                            {{code}} {{name}}
-                        </div>
-                        {{/each}}
-                    </div>
-                </div>
+                <select id="search" class="ui search selection dropdown fluid" value="{{mod}}">
+                    <option value="">Modules</option>
+                    {{#each modules}}
+                    <option value="{{id}}">{{code}} {{name}}</option>
+                    {{/each}}
+                </select>
                 <button class="ui inverted button" id="addRepo"><i class="plus icon"></i>Add</button>
             </div>
         </div>
@@ -30,25 +24,19 @@
         </div>
         <div class="content">
             <div class="ui form">
-                <div class="field">
+                <div class="field" id="modalSearch-field">
                     <label>Module name</label>
-                    <div id="modalSearch" class="ui search selection dropdown fluid">
-                        <input type="hidden" name="module">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Modules</div>
-                        <div class="menu">
-                            {{#each modules}}
-                            <div class="item" data-value="{{id}}">
-                                {{code}} {{name}}
-                            </div>
-                            {{/each}}
-                        </div>
-                    </div>
+                    <select id="modalSearch" class="ui search selection dropdown fluid" value="{{mod}}">
+                        <option value="">Modules</option>
+                        {{#each modules}}
+                        <option value="{{id}}">{{code}} {{name}}</option>
+                        {{/each}}
+                    </select>
                 </div>
                 <div class="field" id="github-field">
                     <label>Github repo</label>
                     <div class="ui right labeled input">
-                        <input id="github" name="github" type="text" placeholder="https://github.com/cly753/cz4062_project">
+                        <input id="github" name="github" type="text" placeholder="https://github.com/user/repo">
                     </div>
                 </div>
             </div>
