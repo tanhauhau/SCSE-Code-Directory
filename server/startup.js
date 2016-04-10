@@ -5,16 +5,6 @@ Meteor.startup(() => {
         if(Modules.find().count() == 0){
             var modules = [
                 {id: "MH1812", code: "MH1812", name: "Discrete Mathematics" },
-                {id: "HW0001", code: "HW0001", name: "English Proficiency" },
-                {id: "HW0188", code: "HW0188", name: "Engineering Communication I" },
-                {id: "HW0288", code: "HW0288", name: "Engineering Communication" },
-                {id: "GC0001", code: "GC0001", name: "Introduction to Sustainability: Multidisciplinary Approaches and Solutions" },
-                {id: "ET0001", code: "ET0001", name: "Enterprise & Innovation" },
-                {id: "ML0001", code: "ML0001", name: "Absolute Basics for Career by MLCPS (Margaret Lien Centre for Professional Success)" },
-                {id: "ML0002", code: "ML0002", name: "Career Power Up! by MLCPS" },
-                {id: "GC0002", code: "GC0002", name: "Ethics & Moral Reasoning" },
-                {id: "CX0001", code: "CZ0001", name: "Engineers and Society" },
-                {id: "CX0001", code: "CE0001", name: "Engineers and Society" },
                 {id: "CX1002", code: "CZ1002", name: "Introduction to Computing Systems" },
                 {id: "CX1003", code: "CZ1003", name: "Introduction to Computational Thinking" },
                 {id: "CX1004", code: "CZ1004", name: "Great Ideas in Computing" },
