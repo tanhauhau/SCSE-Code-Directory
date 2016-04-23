@@ -92,7 +92,6 @@ Meteor.startup(() => {
                 {id: "CX4022", code: "CE4022", name: "Personal Mobile Networks" },
                 {id: "CX4023", code: "CE4023", name: "Advanced Computer Networks" },
                 {id: "CX4024", code: "CE4024", name: "Cryptography and Network Security" },
-                {id: "CX4024", code: "CE4024", name: "Cryptography and Network Security" },
                 {id: "CX4062", code: "CE4062", name: "Computer Security (System Security)" },
                 {id: "CX4064", code: "CE4064", name: "Security Management" },
                 {id: "CX4065", code: "CE4065", name: "Digital Forensics" }
